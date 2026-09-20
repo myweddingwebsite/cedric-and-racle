@@ -3,656 +3,1277 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cedric & Racle | April 2, 2027</title>
-<meta name="description" content="Join Cedric and Racle as they say 'I do' — April 2, 2027, Villa Franchesca, Palawan.">
+<title>Cedric &amp; Racle | April 2, 2027 — Villa Franchesca, Palawan</title>
+<meta name="description" content="Together with their families, Cedric Soberano Labida and Racle Magtulis Domondon invite you to celebrate their union on April 2, 2027 at Villa Franchesca, Palawan.">
+
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:opsz,wght@9..144,340;9..144,440;9..144,560;9..144,650&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --hot-pink:#ff3e7f;
-    --pink-deep:#c23373;
-    --orange:#ff7a3d;
-    --orange-deep:#e8531c;
-    --gold:#ffb84d;
-    --cream:#fff6ec;
-    --sand:#fff0dd;
-    --ink:#2c1b2e;
-    --plum:#3d1638;
-    --plum-light:#5c2350;
-    --maxw:1120px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family:'Jost',sans-serif;
-    color:var(--ink);
-    background:var(--cream);
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{
-    font-family:'Fraunces',serif;
-    margin:0;
-    color:var(--plum);
-    font-weight:560;
-  }
-  p{line-height:1.7;}
-  a{color:inherit;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  img{max-width:100%;display:block;}
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
-
-  /* ---------- NAV ---------- */
-  #nav{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:16px 28px;
-    background:rgba(255,246,236,0.0);
-    transition:background .35s ease, box-shadow .35s ease, padding .35s ease;
-  }
-  #nav.scrolled{
-    background:rgba(255,246,236,0.92);
-    backdrop-filter:blur(8px);
-    box-shadow:0 4px 18px rgba(44,27,46,0.08);
-    padding:10px 28px;
-  }
-  .nav-mark{
-    font-family:'Alex Brush',cursive;
-    font-size:1.9rem;
-    color:#fff;
-    text-shadow:0 1px 6px rgba(0,0,0,0.25);
-    transition:color .35s ease, text-shadow .35s ease;
-    text-decoration:none;
-  }
-  #nav.scrolled .nav-mark{color:var(--pink-deep); text-shadow:none;}
-  .nav-links{
-    display:flex;gap:30px;
-    list-style:none;margin:0;padding:0;
-  }
-  .nav-links a{
-    text-decoration:none;
-    font-size:0.82rem;
-    letter-spacing:0.06em;
-    color:#fff;
-    text-shadow:0 1px 6px rgba(0,0,0,0.25);
-    transition:color .35s ease, text-shadow .35s ease, opacity .2s ease;
-    padding-bottom:3px;
-    border-bottom:1px solid transparent;
-  }
-  #nav.scrolled .nav-links a{color:var(--ink); text-shadow:none;}
-  .nav-links a:hover{border-bottom-color:currentColor;}
-  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;z-index:110;}
-  .nav-toggle span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.3s;box-shadow:0 1px 4px rgba(0,0,0,.2);}
-  #nav.scrolled .nav-toggle span{background:var(--ink); box-shadow:none;}
-
-  @media (max-width:800px){
-    .nav-links{
-      position:fixed;top:0;right:0;height:100vh;width:min(78vw,320px);
-      background:var(--plum);
-      flex-direction:column;align-items:flex-start;
-      padding:110px 34px 40px;
-      gap:26px;
-      transform:translateX(100%);
-      transition:transform .4s ease;
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'wedding-plum': '#2d112c',
+          'wedding-wine': '#46163b',
+          'wedding-rose': '#e24c7a',
+          'wedding-fuchsia': '#f43f77',
+          'wedding-orange': '#ff7844',
+          'wedding-coral': '#ff9b6a',
+          'wedding-gold': '#e8b86d',
+          'wedding-gold-light': '#fdf0d5',
+          'wedding-cream': '#fffaf3',
+          'wedding-sand': '#fbf3e8',
+        },
+        fontFamily: {
+          script: ['"Alex Brush"', 'cursive'],
+          serif: ['"Cormorant Garamond"', 'serif'],
+          sans: ['"Jost"', 'sans-serif'],
+        }
+      }
     }
-    .nav-links.open{transform:translateX(0);}
-    .nav-links a{color:var(--cream); font-size:1rem;}
-    .nav-toggle{display:block;}
-    .nav-toggle span{background:#fff;}
-    #nav.scrolled .nav-toggle span{background:var(--ink);}
+  }
+</script>
+
+<style>
+  :root {
+    --gold-grad: linear-gradient(135deg, #d4af37 0%, #f6e27a 40%, #cb9b2b 75%, #ecd279 100%);
+    --gold-border: linear-gradient(135deg, #f2d08a, #d4af37, #f7e6a6, #c59332);
+    --sunset-bg: linear-gradient(165deg, #fcd299 0%, #faa067 22%, #f06a6b 48%, #c93b79 72%, #5a1e48 100%);
   }
 
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;
-    overflow:hidden;
-    background:
-      radial-gradient(circle at 50% 78%, rgba(255,216,140,0.95) 0%, rgba(255,184,77,0.0) 32%),
-      linear-gradient(180deg, #ffd97e 0%, #ffb54c 18%, #ff8a4a 38%, #ff5f6b 58%, #ea3f83 78%, #7a2c63 100%);
-    padding:120px 24px 60px;
-  }
-  .hero .sun{
-    position:absolute;
-    left:50%;bottom:14%;
-    width:230px;height:230px;
-    transform:translateX(-50%);
-    border-radius:50%;
-    background:radial-gradient(circle at 50% 50%, #fff4d6 0%, #ffe9a8 35%, #ffcf72 65%, rgba(255,207,114,0) 72%);
-    filter:blur(0.5px);
-    opacity:0.9;
-  }
-  .hero .cloud{position:absolute; border-radius:50%; filter:blur(6px); opacity:0.55; mix-blend-mode:screen;}
-  .cloud-1{top:14%; left:-6%; width:280px; height:70px; background:radial-gradient(ellipse at center, rgba(255,233,190,0.9), rgba(255,233,190,0));}
-  .cloud-2{top:24%; right:-8%; width:340px; height:90px; background:radial-gradient(ellipse at center, rgba(255,190,150,0.75), rgba(255,190,150,0));}
-  .cloud-3{top:6%; left:30%; width:220px; height:60px; background:radial-gradient(ellipse at center, rgba(255,240,210,0.6), rgba(255,240,210,0));}
-  .hero-content{position:relative;z-index:2;}
-  .hero .kicker{
-    font-size:0.8rem;letter-spacing:0.24em;color:#fff2df;
-    text-shadow:0 1px 6px rgba(122,44,99,0.4);
-    margin-bottom:18px;
-  }
-  .hero h1{
-    font-family:'Alex Brush',cursive;
-    font-weight:400;
-    font-size:clamp(3.4rem, 11vw, 7rem);
-    color:#fff;
-    line-height:1;
-    text-shadow:0 4px 22px rgba(122,44,99,0.35);
-  }
-  .hero .amp{
-    display:block;
-    font-family:'Fraunces',serif;
-    font-style:italic;
-    font-size:clamp(1.3rem,4vw,2rem);
-    color:#fff2df;
-    margin:6px 0;
-  }
-  .hero .datebar{
-    margin-top:26px;
-    font-family:'Fraunces',serif;
-    font-size:clamp(1rem,2.4vw,1.3rem);
-    color:#fff;
-    letter-spacing:0.04em;
-    text-shadow:0 2px 10px rgba(122,44,99,0.35);
-  }
-  .hero .place{
-    margin-top:6px;
-    font-size:0.95rem;
-    color:#fff2df;
+  html {
+    scroll-behavior: smooth;
   }
 
-  .countdown{
-    margin-top:42px;
-    display:flex;gap:14px;justify-content:center;flex-wrap:nowrap;
-    position:relative;z-index:2;
-    width:100%;
-  }
-  .countdown .box{
-    background:rgba(255,255,255,0.16);
-    border:1px solid rgba(255,255,255,0.4);
-    backdrop-filter:blur(6px);
-    border-radius:14px;
-    min-width:76px;
-    flex:1 1 76px;
-    max-width:92px;
-    padding:14px 10px;
-    color:#fff;
-  }
-  .countdown .num{font-family:'Fraunces',serif; font-size:1.9rem; font-weight:600; line-height:1;}
-  .countdown .lbl{font-size:0.62rem; letter-spacing:0.14em; margin-top:6px; opacity:0.9;}
-
-  @media (max-width:480px){
-    .countdown{gap:8px; padding:0 8px;}
-    .countdown .box{min-width:0; padding:10px 4px; border-radius:10px;}
-    .countdown .num{font-size:1.35rem;}
-    .countdown .lbl{font-size:0.5rem; letter-spacing:0.08em;}
+  body {
+    background-color: #fffaf3;
+    color: #2e1a2c;
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
   }
 
-  .scroll-cue{
-    position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
-    color:#fff2df; font-size:0.7rem; letter-spacing:0.2em;
-    z-index:2;
-    animation:bob 2.4s ease-in-out infinite;
+  /* Elegant Gold-Border Glass Cards */
+  .gold-framed-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    box-shadow: 0 16px 36px -10px rgba(78, 20, 56, 0.12), 0 4px 12px rgba(212, 175, 55, 0.15);
   }
-  @keyframes bob{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,8px);}}
-
-  /* ---------- SECTION GENERIC ---------- */
-  section{padding:96px 0;}
-  .eyebrow{
-    font-family:'Alex Brush',cursive;
-    font-size:1.6rem;
-    color:var(--hot-pink);
-    margin-bottom:4px;
-  }
-  .section-head{text-align:center; margin-bottom:56px;}
-  .section-head h2{font-size:clamp(1.9rem,4vw,2.6rem);}
-  .rule{
-    width:64px;height:3px;margin:18px auto 0;
-    background:linear-gradient(90deg,var(--hot-pink),var(--orange));
-    border-radius:2px;
+  .gold-framed-card::before {
+    content: '';
+    position: absolute;
+    inset: -1.5px;
+    border-radius: 19.5px;
+    padding: 1.5px;
+    background: linear-gradient(135deg, #e6c068, #fff4cc, #b88628, #f8df9e, #a37217);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
   }
 
-  /* ---------- DETAILS ---------- */
-  .details{background:var(--plum); color:var(--cream);}
-  .details .section-head h2{color:#fff;}
-  .details .eyebrow{color:var(--gold);}
-  .detail-grid{
-    display:flex; justify-content:center;
-  }
-  .detail-card{
-    background:var(--plum-light);
-    border:1px solid rgba(255,255,255,0.12);
-    border-radius:18px;
-    padding:44px 40px;
-    text-align:center;
-    max-width:460px;
-    width:100%;
-  }
-  .detail-card .tag{
-    font-size:0.68rem;letter-spacing:0.18em;color:var(--gold);margin-bottom:14px;
-  }
-  .detail-card h3{color:#fff; font-size:1.6rem; margin-bottom:10px;}
-  .detail-card p{color:#e9ede9; margin:0; opacity:0.9;}
-  .detail-card .times{
-    margin-top:18px;
-    display:flex; flex-direction:column; gap:6px;
-  }
-  .detail-card .time-row{
-    font-family:'Fraunces',serif;font-size:1.05rem;color:var(--gold);
-  }
-  .detail-card .time-row span{
-    display:block; font-family:'Jost',sans-serif; font-size:0.7rem; letter-spacing:0.1em;
-    color:#e9ede9; opacity:0.75; margin-top:2px;
-  }
-  .map-btn{
-    display:inline-flex; align-items:center; gap:8px;
-    margin-top:26px;
-    padding:12px 26px;
-    background:linear-gradient(90deg,var(--hot-pink),var(--orange));
-    color:#fff; text-decoration:none;
-    border-radius:999px;
-    font-size:0.82rem; letter-spacing:0.06em;
-    box-shadow:0 8px 20px rgba(255,62,127,0.28);
-    transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .map-btn:hover{transform:translateY(-2px); box-shadow:0 12px 26px rgba(255,62,127,0.36);}
-  .map-btn svg{width:16px;height:16px;flex-shrink:0;}
-
-  /* ---------- TIMELINE ---------- */
-  .timeline{background:var(--cream);}
-  .tl-list{
-    max-width:640px;margin:0 auto;
-    border-left:2px solid rgba(255,62,127,0.25);
-    padding-left:28px;
-  }
-  .tl-item{position:relative; padding-bottom:34px;}
-  .tl-item:last-child{padding-bottom:0;}
-  .tl-item::before{
-    content:'';
-    position:absolute; left:-34px; top:4px;
-    width:12px;height:12px;border-radius:50%;
-    background:linear-gradient(135deg,var(--hot-pink),var(--orange));
-    box-shadow:0 0 0 4px var(--cream);
-  }
-  .tl-time{font-family:'Fraunces',serif; color:var(--pink-deep); font-weight:600; font-size:1.02rem;}
-  .tl-label{color:var(--ink); opacity:0.85; margin-top:2px; font-size:0.95rem;}
-
-  /* ---------- ENTOURAGE ---------- */
-  .entourage{background:var(--sand);}
-  .ent-groups{display:grid; grid-template-columns:1fr 1fr; gap:36px 48px;}
-  .ent-block{text-align:center;}
-  .ent-block h4{
-    font-family:'Fraunces',serif; font-style:italic; font-weight:500;
-    color:var(--orange-deep); font-size:1.05rem; margin-bottom:14px;
-    border-bottom:1px solid rgba(255,122,61,0.3); padding-bottom:8px;
-    display:inline-block;
-  }
-  .ent-block ul{list-style:none;margin:0;padding:0;}
-  .ent-block li{
-    padding:6px 0; font-size:0.95rem; color:var(--ink);
-  }
-  .ent-block li.pair{display:flex; justify-content:center; gap:6px; flex-wrap:wrap;}
-  .ent-block li .divider{color:var(--hot-pink); margin:0 6px;}
-  .ent-block.full{grid-column:1 / -1;}
-  .ent-block.full ul{
-    display:grid;grid-template-columns:1fr 1fr; gap:0 40px;
-  }
-  @media (max-width:720px){
-    .ent-groups{grid-template-columns:1fr;}
-    .ent-block.full ul{grid-template-columns:1fr;}
+  /* Shimmering hero gold veil overlay */
+  .shimmer-rays {
+    background: 
+      radial-gradient(ellipse at 50% 15%, rgba(255, 245, 219, 0.35) 0%, transparent 65%),
+      radial-gradient(ellipse at 80% 50%, rgba(255, 212, 130, 0.22) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 70%, rgba(255, 140, 160, 0.25) 0%, transparent 55%);
+    mix-blend-mode: overlay;
   }
 
-  /* ---------- ATTIRE ---------- */
-  .attire{background:var(--cream);}
-  .attire-table{max-width:820px;margin:0 auto; border-collapse:collapse; width:100%;}
-  .attire-table th{
-    text-align:left; font-family:'Fraunces',serif; font-weight:600; font-size:0.85rem;
-    color:var(--plum); padding:12px 14px; border-bottom:2px solid var(--hot-pink);
-  }
-  .attire-table td{
-    padding:14px; border-bottom:1px solid rgba(44,27,46,0.08); font-size:0.92rem; vertical-align:middle;
-  }
-  .swatch{
-    display:inline-block; width:16px;height:16px;border-radius:50%;
-    margin-right:8px; vertical-align:middle; box-shadow:0 0 0 1px rgba(0,0,0,0.08);
-  }
-  .attire-note{
-    max-width:640px;margin:34px auto 0;text-align:center;font-size:0.88rem;color:var(--ink);opacity:0.75;
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #7c2250 0%, #b83d5a 40%, #e0723e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  /* ---------- GIFT ---------- */
-  .gift{
-    background:linear-gradient(180deg,#ffb54c 0%, #ff7a3d 55%, #ea3f83 100%);
-    color:#fff; text-align:center;
-  }
-  .gift .section-head h2{color:#fff;}
-  .gift .eyebrow{color:#fff6ec;}
-  .gift p{max-width:520px; margin:0 auto 30px; color:#fff2df;}
-  .qr-box{
-    width:200px;height:200px;margin:0 auto;
-    background:#fff6ec;
-    border-radius:18px;
-    display:flex;align-items:center;justify-content:center;
-    color:var(--pink-deep);
-    font-family:'Fraunces',serif;
-    font-size:0.85rem;
-    text-align:center;
-    padding:16px;
-    box-shadow:0 12px 30px rgba(122,44,99,0.28);
+  .gold-metallic-text {
+    background: linear-gradient(135deg, #d39e34 0%, #fff0b3 50%, #b37f1b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  /* ---------- FOOTER ---------- */
-  footer{
-    background:var(--plum); color:#e9ede9;
-    text-align:center; padding:56px 24px 34px;
+  /* Botanical Flower Sway Keyframes */
+  @keyframes gentleSwayLeft {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(-2.5deg) translateY(-6px); }
   }
-  footer .hashtag{
-    font-family:'Fraunces',serif; font-style:italic; font-weight:440;
-    font-size:clamp(1.1rem, 4.5vw, 1.6rem);
-    color:var(--gold); margin-bottom:16px;
-    max-width:90%; margin-left:auto; margin-right:auto;
-    overflow-wrap:break-word; word-break:break-word;
-    white-space:normal;
-    line-height:1.4;
+  @keyframes gentleSwayRight {
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(2.8deg) translateY(-8px); }
   }
-  footer .names{font-family:'Fraunces',serif; font-size:1.05rem; color:#fff; margin-bottom:6px;}
-  footer .credit{
-    margin-top:26px; font-size:0.72rem; letter-spacing:0.08em; opacity:0.65;
+  @keyframes gentleFloatSlow {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-10px) scale(1.02); }
   }
-  footer .credit a{color:var(--gold); text-decoration:none;}
+  @keyframes shimmerWave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-sway-left {
+    transform-origin: bottom left;
+    animation: gentleSwayLeft 7s ease-in-out infinite;
+  }
+  .animate-sway-right {
+    transform-origin: bottom right;
+    animation: gentleSwayRight 8.5s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: gentleFloatSlow 6s ease-in-out infinite;
+  }
+
+  /* Ornate Dividers */
+  .filigree-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto 36px;
+    max-width: 420px;
+    opacity: 0.85;
+  }
+  .filigree-divider::before,
+  .filigree-divider::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #d4a340, transparent);
+  }
+
+  /* Subtle Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff6ed;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e8b86d;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d49842;
+  }
+
+  /* Shimmering Button */
+  .btn-gold-sheen {
+    background: linear-gradient(135deg, #3d1434 0%, #681f4f 50%, #9e2a53 100%);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s ease;
+  }
+  .btn-gold-sheen::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      60deg,
+      transparent 30%,
+      rgba(255, 235, 175, 0.35) 50%,
+      transparent 70%
+    );
+    transform: rotate(25deg);
+    transition: all 0.75s ease;
+    opacity: 0;
+  }
+  .btn-gold-sheen:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px -6px rgba(100, 20, 60, 0.35), 0 0 16px rgba(232, 184, 109, 0.45);
+  }
+  .btn-gold-sheen:hover::after {
+    opacity: 1;
+    left: 40%;
+  }
+
+  /* Leaf & Petal Sparkle Particle */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255, 235, 190, 0.9) 0%, rgba(255, 200, 100, 0) 70%);
+  }
 </style>
 </head>
-<body>
 
-<nav id="nav">
-  <a href="#top" class="nav-mark">C&amp;R</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#details">Details</a></li>
-    <li><a href="#timeline">Timeline</a></li>
-    <li><a href="#entourage">Entourage</a></li>
-    <li><a href="#attire">Attire</a></li>
-    <li><a href="#gift">Gift</a></li>
+<body class="relative selection:bg-pink-300 selection:text-wedding-plum">
+
+<!-- Floating Header Navigation -->
+<nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-6 md:px-12 flex items-center justify-between text-white">
+  <!-- Monogram Logo -->
+  <a href="#top" class="font-script text-3xl md:text-4xl tracking-wider text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] hover:text-amber-200 transition">
+    Cedric &amp; Racle
+  </a>
+
+  <!-- Desktop Links -->
+  <ul class="hidden lg:flex items-center space-x-9 text-xs md:text-sm uppercase tracking-[0.18em] font-medium">
+    <li><a href="#details" class="hover:text-amber-200 transition duration-300 drop-shadow py-1 border-b border-transparent hover:border-amber-300">Details</a></li>
+    <li><a href="#timeline" class="hover:text-amber-200 transition duration-300 drop-shadow py-1 border-b border-transparent hover:border-amber-300">Timeline</a></li>
+    <li><a href="#entourage" class="hover:text-amber-200 transition duration-300 drop-shadow py-1 border-b border-transparent hover:border-amber-300">Entourage</a></li>
+    <li><a href="#attire" class="hover:text-amber-200 transition duration-300 drop-shadow py-1 border-b border-transparent hover:border-amber-300">Attire Guide</a></li>
+    <li><a href="#gift" class="hover:text-amber-200 transition duration-300 drop-shadow py-1 border-b border-transparent hover:border-amber-300">Gift Guide</a></li>
   </ul>
+
+  <!-- Desktop RSVP/Contact Action -->
+  <div class="hidden lg:block">
+    <a href="#details" class="text-xs uppercase tracking-[0.2em] font-semibold px-5 py-2.5 rounded-full border border-white/60 bg-white/15 backdrop-blur-md hover:bg-white hover:text-wedding-plum transition-all duration-300 shadow-md">
+      Save the Date
+    </a>
+  </div>
+
+  <!-- Mobile Menu Toggle Button -->
+  <button id="navToggle" aria-label="Toggle Navigation" class="lg:hidden p-2 rounded-lg bg-black/20 backdrop-blur-md text-white focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
 </nav>
 
-<header class="hero" id="top">
-  <div class="cloud cloud-1"></div>
-  <div class="cloud cloud-2"></div>
-  <div class="cloud cloud-3"></div>
-  <div class="sun"></div>
-  <div class="hero-content">
-    <div class="kicker">TOGETHER WITH THEIR FAMILIES</div>
-    <h1>Cedric<span class="amp">&amp;</span>Racle</h1>
-    <div class="datebar">April 2, 2027 &middot; 3:00 PM</div>
-    <div class="place">Villa Franchesca, Palawan</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobileMenu" class="fixed inset-0 z-40 bg-wedding-plum/95 backdrop-blur-xl flex flex-col justify-center items-center space-y-7 text-lg uppercase tracking-[0.2em] text-white opacity-0 pointer-events-none transition-all duration-300 font-serif">
+  <button id="mobileCloseBtn" class="absolute top-6 right-6 p-2 text-white/80 hover:text-white" aria-label="Close menu">
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+  </button>
+  <a href="#top" class="mobile-link text-3xl font-script text-amber-200 normal-case mb-4">C &amp; R</a>
+  <a href="#details" class="mobile-link hover:text-wedding-gold transition">Details</a>
+  <a href="#timeline" class="mobile-link hover:text-wedding-gold transition">Timeline</a>
+  <a href="#entourage" class="mobile-link hover:text-wedding-gold transition">Entourage</a>
+  <a href="#attire" class="mobile-link hover:text-wedding-gold transition">Attire Guide</a>
+  <a href="#gift" class="mobile-link hover:text-wedding-gold transition">Gift Guide</a>
+  <a href="#details" class="mobile-link mt-4 px-8 py-3 rounded-full border border-amber-300/60 bg-amber-400/20 text-sm tracking-[0.2em] font-sans">
+    Villa Franchesca, Palawan
+  </a>
+</div>
 
-    <div class="countdown" id="countdown">
-      <div class="box"><div class="num" id="cd-days">00</div><div class="lbl">DAYS</div></div>
-      <div class="box"><div class="num" id="cd-hours">00</div><div class="lbl">HOURS</div></div>
-      <div class="box"><div class="num" id="cd-mins">00</div><div class="lbl">MINS</div></div>
-      <div class="box"><div class="num" id="cd-secs">00</div><div class="lbl">SECS</div></div>
+<!-- ================= HERO SECTION ================= -->
+<header id="top" class="relative min-h-[105vh] flex flex-col justify-center items-center text-center overflow-hidden pt-24 pb-20 px-4"
+  style="background: linear-gradient(160deg, #fce0a2 0%, #fc9f62 20%, #f16869 44%, #c73775 70%, #46143b 100%);">
+
+  <!-- Subtle Ambient Shimmer Overlay & Waves -->
+  <div class="absolute inset-0 shimmer-rays pointer-events-none"></div>
+
+  <!-- Soft Golden Dust Curves SVG Background Layer -->
+  <div class="absolute inset-0 pointer-events-none opacity-40">
+    <svg class="w-full h-full object-cover" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-100,450 C300,200 600,650 1100,320 C1300,180 1400,290 1550,220" stroke="url(#goldenWaveGrad)" stroke-width="2" stroke-dasharray="6 8"/>
+      <path d="M-50,520 C350,280 700,720 1200,380 C1380,260 1480,340 1600,300" stroke="url(#goldenWaveGrad)" stroke-width="1.2" opacity="0.6"/>
+      <path d="M-80,380 C260,140 560,590 1000,260 C1250,120 1350,240 1520,180" stroke="url(#goldenWaveGrad)" stroke-width="1.6" opacity="0.45"/>
+      <defs>
+        <linearGradient id="goldenWaveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fff6cc" stop-opacity="0.8"/>
+          <stop offset="50%" stop-color="#f8d384" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#ff9966" stop-opacity="0.5"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ================= LEFT BOTANICAL FLORAL CLUSTER (Vibrant Sunset Palette) ================= -->
+  <div class="absolute -left-10 md:left-0 bottom-0 pointer-events-none z-10 w-56 sm:w-72 md:w-96 lg:w-[440px] max-w-[45vw] animate-sway-left origin-bottom-left">
+    <svg viewBox="0 0 450 650" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-[0_12px_24px_rgba(40,10,30,0.35)]">
+      <defs>
+        <!-- Flower Petal Gradients -->
+        <linearGradient id="orangeFlowerGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+          <stop offset="0%" stop-color="#ffe8a3"/>
+          <stop offset="35%" stop-color="#ffa347"/>
+          <stop offset="85%" stop-color="#e8531c"/>
+          <stop offset="100%" stop-color="#b52e07"/>
+        </linearGradient>
+        <linearGradient id="fuchsiaFlowerGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+          <stop offset="0%" stop-color="#ffcae2"/>
+          <stop offset="30%" stop-color="#ff4f8b"/>
+          <stop offset="80%" stop-color="#cf1a63"/>
+          <stop offset="100%" stop-color="#7a0b38"/>
+        </linearGradient>
+        <linearGradient id="yellowFlowerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="40%" stop-color="#ffe566"/>
+          <stop offset="85%" stop-color="#f5a623"/>
+          <stop offset="100%" stop-color="#c96f07"/>
+        </linearGradient>
+        <linearGradient id="roseBudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffcbd6"/>
+          <stop offset="60%" stop-color="#f35e80"/>
+          <stop offset="100%" stop-color="#a62648"/>
+        </linearGradient>
+        <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#9fc988"/>
+          <stop offset="60%" stop-color="#558348"/>
+          <stop offset="100%" stop-color="#2a4e21"/>
+        </linearGradient>
+        <linearGradient id="stemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#7ca362"/>
+          <stop offset="100%" stop-color="#3d5a2d"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Stems -->
+      <path d="M 50 650 Q 80 460 110 320" stroke="url(#stemGrad)" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M 50 650 Q 140 480 180 230" stroke="url(#stemGrad)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 50 650 Q 190 520 280 430" stroke="url(#stemGrad)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 30 650 Q 60 550 70 480" stroke="url(#stemGrad)" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Delicate Leaves -->
+      <path d="M 125 390 C 170 380 185 350 195 330 C 175 355 140 375 125 390 Z" fill="url(#leafGrad)" opacity="0.9"/>
+      <path d="M 95 440 C 60 420 40 395 30 375 C 55 400 80 425 95 440 Z" fill="url(#leafGrad)" opacity="0.9"/>
+      <path d="M 170 470 C 220 465 240 440 250 420 C 230 445 190 460 170 470 Z" fill="url(#leafGrad)" opacity="0.85"/>
+      <path d="M 65 520 C 20 515 5 490 0 470 C 20 495 50 510 65 520 Z" fill="url(#leafGrad)" opacity="0.8"/>
+
+      <!-- Top Vibrant Orange Bloom (Left Flank) -->
+      <g transform="translate(170, 210)">
+        <!-- Petals -->
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(0)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(45)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(90)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(135)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(180)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(225)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(270)"/>
+        <path d="M0,0 C-25,-55 25,-55 0,0 Z" fill="url(#orangeFlowerGrad)" transform="rotate(315)"/>
+        <!-- Golden Floral Core -->
+        <circle cx="0" cy="0" r="14" fill="#6d1a03"/>
+        <circle cx="0" cy="0" r="10" fill="#f8b634"/>
+        <circle cx="-3" cy="-3" r="3" fill="#fff4cc"/>
+      </g>
+
+      <!-- Center Fuchsia / Hot Pink Bloom -->
+      <g transform="translate(115, 335) scale(1.15)">
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(20)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(70)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(120)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(170)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(220)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(270)"/>
+        <path d="M0,0 C-32,-65 32,-65 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(320)"/>
+        <!-- Core -->
+        <circle cx="0" cy="0" r="15" fill="#44061d"/>
+        <circle cx="0" cy="0" r="11" fill="#fed87b"/>
+        <circle cx="2" cy="-2" r="3.5" fill="#ffffff"/>
+      </g>
+
+      <!-- Delicate Lower Rose / Coral Bud Bloom -->
+      <g transform="translate(70, 485) scale(0.85)">
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(15)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(65)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(125)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(185)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(245)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(305)"/>
+        <circle cx="0" cy="0" r="10" fill="#6d0f28"/>
+        <circle cx="0" cy="0" r="7" fill="#fedd89"/>
+      </g>
+
+      <!-- Soft Pink Poppy Side Blossom -->
+      <g transform="translate(18, 410) scale(0.7)">
+        <path d="M0,0 C-24,-45 24,-45 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(40)"/>
+        <path d="M0,0 C-24,-45 24,-45 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(110)"/>
+        <path d="M0,0 C-24,-45 24,-45 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(180)"/>
+        <path d="M0,0 C-24,-45 24,-45 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(250)"/>
+        <path d="M0,0 C-24,-45 24,-45 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(320)"/>
+        <circle cx="0" cy="0" r="9" fill="#580820"/>
+        <circle cx="0" cy="0" r="6" fill="#fbd171"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ================= RIGHT BOTANICAL FLORAL CLUSTER (Butter Yellow & Deep Magenta) ================= -->
+  <div class="absolute -right-10 md:right-0 bottom-0 pointer-events-none z-10 w-56 sm:w-72 md:w-96 lg:w-[440px] max-w-[45vw] animate-sway-right origin-bottom-right">
+    <svg viewBox="0 0 450 650" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-[0_12px_24px_rgba(40,10,30,0.35)]">
+      <!-- Stems -->
+      <path d="M 400 650 Q 370 450 335 200" stroke="url(#stemGrad)" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M 400 650 Q 300 480 230 350" stroke="url(#stemGrad)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 400 650 Q 280 540 220 470" stroke="url(#stemGrad)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 420 650 Q 390 530 380 280" stroke="url(#stemGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- Foliage Leaves -->
+      <path d="M 330 390 C 280 385 260 360 250 340 C 275 365 310 380 330 390 Z" fill="url(#leafGrad)" opacity="0.9"/>
+      <path d="M 360 450 C 400 435 420 410 430 390 C 410 415 375 435 360 450 Z" fill="url(#leafGrad)" opacity="0.85"/>
+      <path d="M 280 490 C 230 485 210 460 200 440 C 220 465 260 480 280 490 Z" fill="url(#leafGrad)" opacity="0.8"/>
+
+      <!-- Top Butter Yellow Wildflower (Right Flank) -->
+      <g transform="translate(330, 185) scale(1.1)">
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(10)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(60)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(110)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(160)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(210)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(260)"/>
+        <path d="M0,0 C-30,-60 30,-60 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(310)"/>
+        <!-- Amber Center Core -->
+        <circle cx="0" cy="0" r="14" fill="#753503"/>
+        <circle cx="0" cy="0" r="9" fill="#ffb424"/>
+        <circle cx="-3" cy="-2" r="3" fill="#fff9db"/>
+      </g>
+
+      <!-- Center Deep Magenta / Wine Blossom -->
+      <g transform="translate(235, 345) scale(1.2)">
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(25)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(75)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(125)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(175)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(225)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(275)"/>
+        <path d="M0,0 C-32,-64 32,-64 0,0 Z" fill="url(#fuchsiaFlowerGrad)" transform="rotate(325)"/>
+        <circle cx="0" cy="0" r="14" fill="#380415"/>
+        <circle cx="0" cy="0" r="10" fill="#f8c350"/>
+        <circle cx="2" cy="-2" r="3" fill="#ffffff"/>
+      </g>
+
+      <!-- Soft Peachy Rose Side Blossom -->
+      <g transform="translate(380, 275) scale(0.95)">
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(5)"/>
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(65)"/>
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(125)"/>
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(185)"/>
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(245)"/>
+        <path d="M0,0 C-26,-52 26,-52 0,0 Z" fill="url(#roseBudGrad)" transform="rotate(305)"/>
+        <circle cx="0" cy="0" r="11" fill="#5a1027"/>
+        <circle cx="0" cy="0" r="8" fill="#ffd57a"/>
+      </g>
+
+      <!-- Bottom Radiant Butter Yellow Accent Bloom -->
+      <g transform="translate(225, 475) scale(0.85)">
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(35)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(95)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(155)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(215)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(275)"/>
+        <path d="M0,0 C-28,-50 28,-50 0,0 Z" fill="url(#yellowFlowerGrad)" transform="rotate(335)"/>
+        <circle cx="0" cy="0" r="10" fill="#693003"/>
+        <circle cx="0" cy="0" r="7" fill="#ffbe3d"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Hero Main Typography (Center Stage) -->
+  <div class="relative z-20 max-w-3xl mx-auto px-4 mt-6">
+    <div class="inline-block mb-3 px-5 py-1.5 rounded-full border border-white/40 bg-white/20 backdrop-blur-md shadow-sm">
+      <span class="text-[0.72rem] sm:text-xs tracking-[0.3em] uppercase text-white font-medium drop-shadow-sm">
+        Together With Their Families
+      </span>
+    </div>
+
+    <!-- Couple's Calligraphic Script Names -->
+    <h1 class="font-script text-white text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[1.08] drop-shadow-[0_6px_28px_rgba(70,16,48,0.45)] tracking-wide my-2">
+      Cedric <span class="font-serif italic text-4xl sm:text-5xl md:text-6xl text-amber-200/95 font-normal">&amp;</span> Racle
+    </h1>
+
+    <!-- Wedding Date & Venue Callout -->
+    <p class="font-serif italic text-xl sm:text-2xl md:text-3xl text-amber-100 tracking-wide mt-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+      April 2, 2027 &bull; 3:00 in the Afternoon
+    </p>
+    <p class="text-xs sm:text-sm uppercase tracking-[0.25em] text-white/90 font-light mt-1 drop-shadow-sm">
+      Villa Franchesca &bull; Palawan, Philippines
+    </p>
+
+    <!-- Warm Call-to-Action Button matching mockup -->
+    <div class="mt-8">
+      <a href="#details" class="btn-gold-sheen inline-flex items-center gap-3 px-8 sm:px-10 py-3.5 sm:py-4 rounded-full text-white font-sans text-xs sm:text-sm uppercase tracking-[0.22em] font-medium shadow-xl border border-amber-300/40">
+        <span>Celebration Details</span>
+        <svg class="w-4 h-4 text-amber-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
     </div>
   </div>
-  <div class="scroll-cue">SCROLL</div>
+
+  <!-- ================= LUXURY COUNTDOWN SECTION ================= -->
+  <div class="relative z-20 mt-16 sm:mt-20 w-full max-w-2xl mx-auto px-3">
+    <div class="mb-4">
+      <span class="font-script text-3xl sm:text-4xl text-white drop-shadow-[0_2px_8px_rgba(60,15,40,0.4)]">
+        Countdown to Our Forever
+      </span>
+    </div>
+
+    <!-- 4 Framed Glass Countdown Cards -->
+    <div class="grid grid-cols-4 gap-2.5 sm:gap-5" id="countdown">
+      <!-- Days Card -->
+      <div class="gold-framed-card p-3 sm:p-5 flex flex-col items-center justify-center">
+        <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-medium gold-text-gradient tracking-tight leading-none" id="cd-days">00</span>
+        <span class="font-sans text-[0.62rem] sm:text-xs uppercase tracking-[0.2em] text-wedding-wine/80 mt-1.5 font-medium">Days</span>
+      </div>
+      <!-- Hours Card -->
+      <div class="gold-framed-card p-3 sm:p-5 flex flex-col items-center justify-center">
+        <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-medium gold-text-gradient tracking-tight leading-none" id="cd-hours">00</span>
+        <span class="font-sans text-[0.62rem] sm:text-xs uppercase tracking-[0.2em] text-wedding-wine/80 mt-1.5 font-medium">Hours</span>
+      </div>
+      <!-- Mins Card -->
+      <div class="gold-framed-card p-3 sm:p-5 flex flex-col items-center justify-center">
+        <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-medium gold-text-gradient tracking-tight leading-none" id="cd-mins">00</span>
+        <span class="font-sans text-[0.62rem] sm:text-xs uppercase tracking-[0.2em] text-wedding-wine/80 mt-1.5 font-medium">Minutes</span>
+      </div>
+      <!-- Secs Card -->
+      <div class="gold-framed-card p-3 sm:p-5 flex flex-col items-center justify-center">
+        <span class="font-serif text-3xl sm:text-5xl md:text-6xl font-medium gold-text-gradient tracking-tight leading-none" id="cd-secs">00</span>
+        <span class="font-sans text-[0.62rem] sm:text-xs uppercase tracking-[0.2em] text-wedding-wine/80 mt-1.5 font-medium">Seconds</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Down Cue Indicator -->
+  <a href="#details" class="relative z-20 mt-12 sm:mt-16 flex flex-col items-center text-white/80 hover:text-white transition group">
+    <span class="text-[0.65rem] tracking-[0.25em] uppercase font-light mb-1">Scroll</span>
+    <svg class="w-5 h-5 animate-bounce text-amber-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </a>
 </header>
 
-<section class="details" id="details">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">The Celebration</div>
-      <h2>Where We'll Say I Do</h2>
-      <div class="rule"></div>
+<!-- ================= DETAILS SECTION ================= -->
+<section id="details" class="py-24 sm:py-28 px-4 relative bg-[#fffdfa] overflow-hidden">
+  <!-- Subtle Background Pattern Accent -->
+  <div class="absolute top-0 right-0 w-80 h-80 bg-amber-100/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-100/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+  <div class="max-w-5xl mx-auto">
+    <!-- Header -->
+    <div class="text-center">
+      <span class="font-script text-3xl sm:text-4xl text-wedding-fuchsia">The Celebration</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-wedding-plum font-normal tracking-wide mt-1">
+        Where We'll Say I Do
+      </h2>
+      <div class="filigree-divider">
+        <svg class="w-6 h-6 text-wedding-gold" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+        </svg>
+      </div>
     </div>
-    <div class="detail-grid">
-      <div class="detail-card">
-        <div class="tag">CEREMONY &amp; RECEPTION</div>
-        <h3>Villa Franchesca</h3>
-        <p>Palawan</p>
-        <div class="times">
-          <div class="time-row">4:00 PM<span>Holy Eucharist &amp; Ceremony</span></div>
-          <div class="time-row">6:15 PM<span>Reception Begins</span></div>
+
+    <!-- Dual Layout: Elegant Venue Location Card & Event Schedule Breakdown -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <!-- Left Column: Gold Framed Location Card -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="gold-framed-card w-full max-w-sm p-8 text-center bg-white/95 transition-transform hover:-translate-y-1.5 duration-300">
+          <!-- Elegant Location Pin Icon -->
+          <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-tr from-amber-100 to-rose-100 flex items-center justify-center text-wedding-fuchsia shadow-inner mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+
+          <span class="text-[0.68rem] uppercase tracking-[0.25em] text-wedding-orange font-semibold block mb-1">
+            Ceremony &amp; Reception
+          </span>
+          <h3 class="font-serif text-2xl sm:text-3xl text-wedding-plum font-semibold">
+            Villa Franchesca
+          </h3>
+          <p class="font-sans text-sm text-wedding-wine/80 mt-1 font-light">
+            Palawan, Philippines
+          </p>
+
+          <div class="my-6 border-t border-dashed border-amber-200"></div>
+
+          <!-- Quick time highlight -->
+          <div class="space-y-3 font-serif text-left">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-wedding-plum font-semibold text-lg">Holy Eucharist</p>
+                <p class="text-xs font-sans text-wedding-wine/60">Solemn Marriage Ceremony</p>
+              </div>
+              <span class="text-sm font-semibold text-wedding-orange bg-orange-50 px-2.5 py-1 rounded-md border border-orange-100">4:00 PM</span>
+            </div>
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-wedding-plum font-semibold text-lg">Dinner &amp; Gala</p>
+                <p class="text-xs font-sans text-wedding-wine/60">Cocktails, Speeches &amp; Dance</p>
+              </div>
+              <span class="text-sm font-semibold text-wedding-fuchsia bg-pink-50 px-2.5 py-1 rounded-md border border-pink-100">6:15 PM</span>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Villa+Franchesca+Palawan" target="_blank" rel="noopener"
+             class="btn-gold-sheen w-full mt-7 inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-white text-xs uppercase tracking-[0.2em] font-medium shadow-md">
+            <span>Get Directions</span>
+            <svg class="w-4 h-4 text-amber-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
         </div>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Villa+Franchesca+Palawan" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Get Directions
-        </a>
+      </div>
+
+      <!-- Right Column: Narrative & Warm Welcome -->
+      <div class="md:col-span-7 md:pl-6 space-y-6">
+        <div class="border-l-2 border-wedding-gold pl-6 py-2">
+          <p class="font-serif italic text-2xl sm:text-3xl text-wedding-plum leading-snug">
+            &ldquo;Two lives, two hearts, joined together in friendship, united forever in love.&rdquo;
+          </p>
+        </div>
+
+        <p class="font-sans text-base text-wedding-plum/85 leading-relaxed font-light">
+          Set against the breathtaking tropical horizon of Palawan, Villa Franchesca welcomes our dearest family and friends. We gather under the golden warmth of the Philippine sunset to exchange our holy vows, celebrate answered prayers, and begin the great adventure of a lifetime.
+        </p>
+
+        <p class="font-sans text-base text-wedding-plum/85 leading-relaxed font-light">
+          Guests are kindly requested to arrive by <strong class="font-semibold text-wedding-plum">3:00 PM</strong> for the entourage gathering and prelude music. The Holy Eucharist and nuptial rites will commence promptly at <strong class="font-semibold text-wedding-plum">4:00 PM</strong>.
+        </p>
+
+        <!-- Feature Points -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100 flex items-start gap-3">
+            <span class="text-xl">🌴</span>
+            <div>
+              <h4 class="font-serif font-semibold text-wedding-plum text-base">Palawan Destination</h4>
+              <p class="text-xs text-wedding-wine/70 font-sans mt-0.5">Allow time for island transit &amp; hotel accommodation.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-pink-50/60 border border-pink-100 flex items-start gap-3">
+            <span class="text-xl">🥂</span>
+            <div>
+              <h4 class="font-serif font-semibold text-wedding-plum text-base">Sunset Reception</h4>
+              <p class="text-xs text-wedding-wine/70 font-sans mt-0.5">Golden hour cocktails followed by our dinner celebration.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="timeline" id="timeline">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">The Program</div>
-      <h2>Our Day, Hour by Hour</h2>
-      <div class="rule"></div>
+<!-- ================= TIMELINE SECTION ================= -->
+<section id="timeline" class="py-24 sm:py-28 px-4 bg-[#fbf6ee] relative border-t border-b border-amber-100/70">
+  <div class="max-w-4xl mx-auto">
+    <!-- Section Heading -->
+    <div class="text-center">
+      <span class="font-script text-3xl sm:text-4xl text-wedding-orange">The Program</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-wedding-plum font-normal tracking-wide mt-1">
+        Our Day, Hour by Hour
+      </h2>
+      <div class="filigree-divider">
+        <svg class="w-6 h-6 text-wedding-gold" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11V6h2v5h4v2h-6z"/>
+        </svg>
+      </div>
     </div>
-    <div class="tl-list">
-      <div class="tl-item"><div class="tl-time">3:00 PM</div><div class="tl-label">Gathering &amp; Entourage Procession</div></div>
-      <div class="tl-item"><div class="tl-time">4:00 PM</div><div class="tl-label">Wedding Ceremony &mdash; Holy Eucharist &amp; Exchange of Vows</div></div>
-      <div class="tl-item"><div class="tl-time">5:00 PM</div><div class="tl-label">Pica-Pica, Cocktail Hour &amp; Golden Hour Photos</div></div>
-      <div class="tl-item"><div class="tl-time">6:15 PM</div><div class="tl-label">Start of Reception</div></div>
-      <div class="tl-item"><div class="tl-time">6:30 PM</div><div class="tl-label">Bride &amp; Groom Entrance</div></div>
-      <div class="tl-item"><div class="tl-time">7:00 PM</div><div class="tl-label">Dinner</div></div>
-      <div class="tl-item"><div class="tl-time">8:00 PM</div><div class="tl-label">Program Starts</div></div>
-      <div class="tl-item"><div class="tl-time">9:30 PM</div><div class="tl-label">Fireworks &amp; Same-Day Edit Screening</div></div>
-      <div class="tl-item"><div class="tl-time">10:00 PM</div><div class="tl-label">Start of After Party</div></div>
+
+    <!-- Vertical Timeline with Refined Dot-and-Line Design -->
+    <div class="relative mt-16 max-w-2xl mx-auto">
+      <!-- Continuous Golden Spine Line -->
+      <div class="absolute left-6 md:left-1/2 top-3 bottom-3 w-[2px] bg-gradient-to-b from-amber-300 via-pink-400 to-amber-300 transform md:-translate-x-1/2"></div>
+
+      <div class="space-y-10">
+
+        <!-- 3:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="md:w-1/2 md:pr-10 md:text-right pl-14 md:pl-0">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">3:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Guest Gathering &amp; Prelude</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Entourage preparation &amp; arrival at Villa Franchesca chapel grounds.</p>
+          </div>
+          <!-- Center Dot -->
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-orange shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-orange"></div>
+          </div>
+          <div class="hidden md:block md:w-1/2 md:pl-10"></div>
+        </div>
+
+        <!-- 4:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="hidden md:block md:w-1/2 md:pr-10"></div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-wedding-orange to-wedding-fuchsia p-[2px] shadow-lg">
+            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-wedding-fuchsia"></div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-10 pl-14">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-fuchsia font-semibold">4:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Wedding Ceremony</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">The Holy Eucharist &amp; solemn exchange of vows and rings.</p>
+          </div>
+        </div>
+
+        <!-- 5:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="md:w-1/2 md:pr-10 md:text-right pl-14 md:pl-0">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">5:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Cocktails &amp; Golden Hour Photos</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Pica-pica, refreshing drinks, and golden hour sunset snapshots.</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-gold shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-gold"></div>
+          </div>
+          <div class="hidden md:block md:w-1/2 md:pl-10"></div>
+        </div>
+
+        <!-- 6:15 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="hidden md:block md:w-1/2 md:pr-10"></div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-orange shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-orange"></div>
+          </div>
+          <div class="md:w-1/2 md:pl-10 pl-14">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">6:15 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Doors Open for Reception</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Guests are escorted to their designated celebration tables.</p>
+          </div>
+        </div>
+
+        <!-- 6:30 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="md:w-1/2 md:pr-10 md:text-right pl-14 md:pl-0">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">6:30 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Grand Entrance</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Welcoming Mr. &amp; Mrs. Cedric and Racle Labida!</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-fuchsia shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-fuchsia"></div>
+          </div>
+          <div class="hidden md:block md:w-1/2 md:pl-10"></div>
+        </div>
+
+        <!-- 7:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="hidden md:block md:w-1/2 md:pr-10"></div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-orange shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-orange"></div>
+          </div>
+          <div class="md:w-1/2 md:pl-10 pl-14">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">7:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Dinner Banquet</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">A curated culinary feast and celebratory wine toast.</p>
+          </div>
+        </div>
+
+        <!-- 8:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="md:w-1/2 md:pr-10 md:text-right pl-14 md:pl-0">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">8:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Program &amp; Speeches</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">First dance, cake cutting, heartfelt toasts &amp; family traditions.</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-gold shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-gold"></div>
+          </div>
+          <div class="hidden md:block md:w-1/2 md:pl-10"></div>
+        </div>
+
+        <!-- 9:30 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="hidden md:block md:w-1/2 md:pr-10"></div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-amber-400 to-wedding-rose p-[2px] shadow-lg">
+            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-wedding-orange"></div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-10 pl-14">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-orange font-semibold">9:30 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">Fireworks &amp; Same-Day Edit</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Screening of the day's highlights under illuminated night skies.</p>
+          </div>
+        </div>
+
+        <!-- 10:00 PM -->
+        <div class="relative flex flex-col md:flex-row items-start md:items-center group">
+          <div class="md:w-1/2 md:pr-10 md:text-right pl-14 md:pl-0">
+            <span class="inline-block font-serif text-xl sm:text-2xl text-wedding-plum font-semibold">10:00 PM</span>
+            <h4 class="text-base font-serif font-medium text-wedding-wine">After Party</h4>
+            <p class="text-xs font-sans text-wedding-wine/70 mt-0.5 font-light">Music, signature island cocktails &amp; dancing into the night.</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-white border-2 border-wedding-wine shadow-md flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-wedding-plum"></div>
+          </div>
+          <div class="hidden md:block md:w-1/2 md:pl-10"></div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
 
-<section class="entourage" id="entourage">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">With Gratitude</div>
-      <h2>Our Wedding Entourage</h2>
-      <div class="rule"></div>
+<!-- ================= ENTOURAGE SECTION ================= -->
+<section id="entourage" class="py-24 sm:py-28 px-4 bg-[#fffaf3] relative">
+  <div class="max-w-5xl mx-auto">
+    <!-- Section Title -->
+    <div class="text-center">
+      <span class="font-script text-3xl sm:text-4xl text-wedding-fuchsia">With Gratitude</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-wedding-plum font-normal tracking-wide mt-1">
+        Our Wedding Entourage
+      </h2>
+      <div class="filigree-divider">
+        <svg class="w-6 h-6 text-wedding-gold" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <p class="text-xs sm:text-sm font-sans text-wedding-wine/70 uppercase tracking-[0.18em]">
+        Standing by our side as we begin our new chapter
+      </p>
     </div>
-    <div class="ent-groups">
 
-      <div class="ent-block">
-        <h4>Parents of the Groom</h4>
-        <ul>
-          <li>Ricardo P. Labida</li>
-          <li>Emily S. Labida</li>
-        </ul>
+    <!-- Editorial Entourage Layout -->
+    <div class="mt-14 space-y-12">
+
+      <!-- Parents Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
+        <!-- Groom's Parents -->
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Parents of the Groom
+          </h4>
+          <ul class="space-y-1.5 font-serif text-lg text-wedding-plum">
+            <li>Ricardo P. Labida</li>
+            <li>Emily S. Labida</li>
+          </ul>
+        </div>
+
+        <!-- Bride's Parents -->
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Parents of the Bride
+          </h4>
+          <ul class="space-y-1.5 font-serif text-lg text-wedding-plum">
+            <li>Raul M. Domondon</li>
+            <li>Liberty Clyde M. Domondon</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="ent-block">
-        <h4>Parents of the Bride</h4>
-        <ul>
-          <li>Raul M. Domondon</li>
-          <li>Liberty Clyde M. Domondon</li>
-        </ul>
+      <!-- Principal Sponsors (Framed Feature) -->
+      <div class="gold-framed-card p-8 sm:p-10 max-w-4xl mx-auto text-center bg-white/90">
+        <h4 class="font-serif italic text-xl sm:text-2xl text-wedding-orange font-semibold mb-2">
+          Principal Sponsors
+        </h4>
+        <p class="text-xs uppercase tracking-[0.2em] text-wedding-wine/60 font-sans mb-8">
+          Guides, mentors &amp; witnesses to our holy sacrament
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 text-center font-serif text-base sm:text-lg text-wedding-plum">
+          <div class="flex items-center justify-center gap-2">
+            <span>Baham Mitra</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Rowena Gicanal</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <span>Oliver Perido</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Nancy Perido</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <span>Jun Arceo</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Lourdes Arceo</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <span>Alicio Sulad</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Maryann P. Magtulis</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <span>Rodney Verian</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Nancy Montes</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <span>John Ariel Villajos</span>
+            <span class="text-wedding-rose font-script text-xl">&amp;</span>
+            <span>Katherine Gabo</span>
+          </div>
+        </div>
       </div>
 
-      <div class="ent-block full">
-        <h4>Principal Sponsors</h4>
-        <ul>
-          <li class="pair"><span>Baham Mitra</span><span class="divider">&amp;</span><span>Rowena Gicanal</span></li>
-          <li class="pair"><span>Oliver Perido</span><span class="divider">&amp;</span><span>Nancy Perido</span></li>
-          <li class="pair"><span>Jun Arceo</span><span class="divider">&amp;</span><span>Lourdes Arceo</span></li>
-          <li class="pair"><span>Alicio Sulad</span><span class="divider">&amp;</span><span>Maryann P. Magtulis</span></li>
-          <li class="pair"><span>Rodney Verian</span><span class="divider">&amp;</span><span>Nancy Montes</span></li>
-          <li class="pair"><span>John Ariel Villajos</span><span class="divider">&amp;</span><span>Katherine Gabo</span></li>
-        </ul>
+      <!-- Best Men & Maids of Honor -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Best Men
+          </h4>
+          <ul class="space-y-1 font-serif text-lg text-wedding-plum">
+            <li>Rocks M. Domondon</li>
+            <li>Kenneth S. Labida</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Maid &amp; Matron of Honor
+          </h4>
+          <ul class="space-y-1 font-serif text-lg text-wedding-plum">
+            <li>Jelena Mai D. Gicanal</li>
+            <li>Angelou Bautista&ndash;Duero</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="ent-block">
-        <h4>Best Man</h4>
-        <ul>
-          <li>Rocks M. Domondon</li>
-          <li>Kenneth S. Labida</li>
-        </ul>
+      <!-- Groomsmen & Bridesmaids -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center max-w-4xl mx-auto">
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Groomsmen
+          </h4>
+          <ul class="grid grid-cols-2 gap-2 font-serif text-base text-wedding-plum">
+            <li>Ericson Magtulis</li>
+            <li>Julius Lansing</li>
+            <li>Reyal Pisares</li>
+            <li>Joemboy Abrina</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100 shadow-sm">
+          <h4 class="font-serif italic text-lg sm:text-xl text-wedding-orange font-semibold mb-3">
+            Bridesmaids &amp; Bridesmen
+          </h4>
+          <ul class="space-y-1 font-serif text-base text-wedding-plum">
+            <li>Eunice Lois P. Magtulis</li>
+            <li>Carmela Ysabel S. Labida</li>
+            <li>Reynaldo Badajos</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="ent-block">
-        <h4>Maid &amp; Matron of Honor</h4>
-        <ul>
-          <li>Jelena Mai D. Gicanal</li>
-          <li>Angelou Bautista&ndash;Duero</li>
-        </ul>
+      <!-- Secondary Sponsors: Candle, Veil, Cord -->
+      <div class="p-8 rounded-2xl bg-amber-50/50 border border-amber-200/60 max-w-4xl mx-auto text-center">
+        <h4 class="font-serif italic text-xl text-wedding-plum font-semibold mb-6">
+          Secondary Sponsors
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-serif">
+          <div class="p-4 bg-white rounded-xl shadow-xs border border-amber-100">
+            <span class="text-xs uppercase tracking-[0.2em] text-wedding-orange font-sans block mb-1">To Light Our Path</span>
+            <p class="font-semibold text-wedding-plum text-lg">Candle Sponsors</p>
+            <p class="text-wedding-wine/80 text-sm mt-1">Noella M. Ponce</p>
+            <p class="text-wedding-wine/80 text-sm">Francis Eric M. Domondon</p>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl shadow-xs border border-amber-100">
+            <span class="text-xs uppercase tracking-[0.2em] text-wedding-fuchsia font-sans block mb-1">To Clothe Us in Oneness</span>
+            <p class="font-semibold text-wedding-plum text-lg">Veil Sponsors</p>
+            <p class="text-wedding-wine/80 text-sm mt-1">Cheryll A. Macabutas</p>
+            <p class="text-wedding-wine/80 text-sm">Jayson Manlavi</p>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl shadow-xs border border-amber-100">
+            <span class="text-xs uppercase tracking-[0.2em] text-wedding-gold font-sans block mb-1">To Bind Us in Unity</span>
+            <p class="font-semibold text-wedding-plum text-lg">Cord Sponsors</p>
+            <p class="text-wedding-wine/80 text-sm mt-1">Jonah Mae D. Bul-an</p>
+            <p class="text-wedding-wine/80 text-sm">Dan Oliver Manga</p>
+          </div>
+        </div>
       </div>
 
-      <div class="ent-block">
-        <h4>Groomsmen</h4>
-        <ul>
-          <li>Ericson Magtulis</li>
-          <li>Julius Lansing</li>
-          <li>Reyal Pisares</li>
-          <li>Joemboy Abrina</li>
-        </ul>
-      </div>
+      <!-- Bearers & Flower Girls -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center font-serif">
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100">
+          <h4 class="italic text-lg text-wedding-orange font-semibold mb-2">Flower Girls</h4>
+          <ul class="space-y-1 text-sm sm:text-base text-wedding-plum">
+            <li>Aveline Jay M. Bacaycay</li>
+            <li>Zaniah Yin B. Manga</li>
+            <li>Elena Beatrice S. Janubas</li>
+          </ul>
+        </div>
 
-      <div class="ent-block">
-        <h4>Bridesmaids / Bridesmen</h4>
-        <ul>
-          <li>Eunice Lois P. Magtulis</li>
-          <li>Carmela Ysabel S. Labida</li>
-          <li>Reynaldo Badajos</li>
-        </ul>
-      </div>
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100">
+          <h4 class="italic text-lg text-wedding-orange font-semibold mb-2">Sacred Bearers</h4>
+          <ul class="space-y-1 text-sm sm:text-base text-wedding-plum">
+            <li>Joymark B. Tindog <span class="block text-xs font-sans text-wedding-wine/60">Bible Bearer</span></li>
+            <li>Mark R. Viterbo <span class="block text-xs font-sans text-wedding-wine/60">Coin Bearer</span></li>
+            <li>Noah G. Cabiara <span class="block text-xs font-sans text-wedding-wine/60">Ring Bearer</span></li>
+          </ul>
+        </div>
 
-      <div class="ent-block">
-        <h4>Candle Sponsors</h4>
-        <ul>
-          <li>Noella M. Ponce</li>
-          <li>Francis Eric M. Domondon</li>
-        </ul>
-      </div>
-
-      <div class="ent-block">
-        <h4>Veil Sponsors</h4>
-        <ul>
-          <li>Cheryll A. Macabutas</li>
-          <li>Jayson Manlavi</li>
-        </ul>
-      </div>
-
-      <div class="ent-block">
-        <h4>Cord Sponsors</h4>
-        <ul>
-          <li>Jonah Mae D. Bul-an</li>
-          <li>Dan Oliver Manga</li>
-        </ul>
-      </div>
-
-      <div class="ent-block">
-        <h4>Flower Girls</h4>
-        <ul>
-          <li>Aveline Jay M. Bacaycay</li>
-          <li>Zaniah Yin B. Manga</li>
-          <li>Elena Beatrice S. Janubas</li>
-        </ul>
-      </div>
-
-      <div class="ent-block">
-        <h4>Bible, Coin &amp; Ring Bearers</h4>
-        <ul>
-          <li>Joymark B. Tindog &mdash; Bible Bearer</li>
-          <li>Mark R. Viterbo &mdash; Coin Bearer</li>
-          <li>Noah G. Cabiara &mdash; Ring Bearer</li>
-        </ul>
-      </div>
-
-      <div class="ent-block">
-        <h4>Banner Bearers</h4>
-        <ul>
-          <li>Francisca M. Domondon</li>
-          <li>Ruben L. Domondon</li>
-        </ul>
+        <div class="p-6 rounded-2xl bg-white/70 border border-amber-100">
+          <h4 class="italic text-lg text-wedding-orange font-semibold mb-2">Banner Bearers</h4>
+          <ul class="space-y-1 text-sm sm:text-base text-wedding-plum">
+            <li>Francisca M. Domondon</li>
+            <li>Ruben L. Domondon</li>
+          </ul>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<section class="attire" id="attire">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">What to Wear</div>
-      <h2>Attire Guide</h2>
-      <div class="rule"></div>
+<!-- ================= ATTIRE GUIDE SECTION ================= -->
+<section id="attire" class="py-24 sm:py-28 px-4 bg-[#fbf5eb] relative border-t border-amber-200/50">
+  <div class="max-w-4xl mx-auto">
+    <!-- Heading -->
+    <div class="text-center">
+      <span class="font-script text-3xl sm:text-4xl text-wedding-orange">What to Wear</span>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-wedding-plum font-normal tracking-wide mt-1">
+        Attire Guide
+      </h2>
+      <div class="filigree-divider">
+        <svg class="w-6 h-6 text-wedding-gold" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
+      </div>
+      <p class="text-xs sm:text-sm font-sans text-wedding-wine/70 uppercase tracking-[0.18em]">
+        Our Palette: Warm sunset tones of yellow, fuchsia, terracotta, and soft neutrals
+      </p>
     </div>
-    <table class="attire-table">
-      <thead>
-        <tr><th>Role</th><th>For</th><th>Color</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Guests</td><td>Female</td><td><span class="swatch" style="background:#e7c97a"></span>Butter Yellow</td></tr>
-        <tr><td>Guests</td><td>Male</td><td><span class="swatch" style="background:#e4d3b0"></span>Cream / Khaki</td></tr>
-        <tr><td>Principal Sponsors</td><td>Godmothers</td><td><span class="swatch" style="background:#c1502e"></span>Terracotta</td></tr>
-        <tr><td>Principal Sponsors</td><td>Godfathers</td><td><span class="swatch" style="background:#1b1b1b"></span>Barong w/ Black Slacks</td></tr>
-        <tr><td>Secondary Sponsors</td><td>Maid of Honor</td><td><span class="swatch" style="background:#ff7a3d"></span>Orange</td></tr>
-        <tr><td>Secondary Sponsors</td><td>Bridesmaid</td><td><span class="swatch" style="background:#ff3e7f"></span>Fuchsia</td></tr>
-        <tr><td>Secondary Sponsors</td><td>Best Man</td><td><span class="swatch" style="background:#c8a876"></span>Barong w/ Khaki Slacks</td></tr>
-        <tr><td>Secondary Sponsors</td><td>Groomsmen</td><td><span class="swatch" style="background:#6b4226"></span>Barong w/ Brown Slacks</td></tr>
-      </tbody>
-    </table>
-    <p class="attire-note">We'd love for our sunset palette to come alive in the crowd &mdash; think hot pink, orange, terracotta, and warm neutrals. Please kindly avoid white, as it's reserved for the bride.</p>
+
+    <!-- Color Palette Swatches Preview Row -->
+    <div class="mt-8 mb-10 flex flex-wrap justify-center items-center gap-3">
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-xs border border-amber-100">
+        <span class="w-4 h-4 rounded-full border border-black/10 shadow-xs" style="background:#e7c97a;"></span>
+        <span class="text-xs font-sans text-wedding-wine">Butter Yellow</span>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-xs border border-amber-100">
+        <span class="w-4 h-4 rounded-full border border-black/10 shadow-xs" style="background:#e4d3b0;"></span>
+        <span class="text-xs font-sans text-wedding-wine">Cream / Khaki</span>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-xs border border-amber-100">
+        <span class="w-4 h-4 rounded-full border border-black/10 shadow-xs" style="background:#c1502e;"></span>
+        <span class="text-xs font-sans text-wedding-wine">Terracotta</span>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-xs border border-amber-100">
+        <span class="w-4 h-4 rounded-full border border-black/10 shadow-xs" style="background:#ff7a3d;"></span>
+        <span class="text-xs font-sans text-wedding-wine">Sunset Orange</span>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white shadow-xs border border-amber-100">
+        <span class="w-4 h-4 rounded-full border border-black/10 shadow-xs" style="background:#ff3e7f;"></span>
+        <span class="text-xs font-sans text-wedding-wine">Fuchsia</span>
+      </div>
+    </div>
+
+    <!-- Editorial Table / Cards matching design reference -->
+    <div class="gold-framed-card p-4 sm:p-8 bg-white/95 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-wedding-fuchsia/40 text-wedding-plum font-serif text-sm sm:text-base">
+              <th class="py-3.5 px-3 font-semibold">Role</th>
+              <th class="py-3.5 px-3 font-semibold">For</th>
+              <th class="py-3.5 px-3 font-semibold">Color / Attire Details</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-amber-100/70 font-sans text-xs sm:text-sm text-wedding-wine/85">
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Guests</td>
+              <td class="py-3.5 px-3">Female</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#e7c97a;"></span>
+                <span>Butter Yellow Gown or Cocktail Dress</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Guests</td>
+              <td class="py-3.5 px-3">Male</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#e4d3b0;"></span>
+                <span>Barong or Suit in Cream / Khaki Tones</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Principal Sponsors</td>
+              <td class="py-3.5 px-3">Godmothers</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#c1502e;"></span>
+                <span>Terracotta Formal Long Gown</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Principal Sponsors</td>
+              <td class="py-3.5 px-3">Godfathers</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#1b1b1b;"></span>
+                <span>Formal Barong Tagalog with Black Slacks</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Secondary Sponsors</td>
+              <td class="py-3.5 px-3">Maid of Honor</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#ff7a3d;"></span>
+                <span>Vibrant Sunset Orange</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Secondary Sponsors</td>
+              <td class="py-3.5 px-3">Bridesmaids</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#ff3e7f;"></span>
+                <span>Fuchsia Pink Floor-length Dress</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Secondary Sponsors</td>
+              <td class="py-3.5 px-3">Best Men</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#c8a876;"></span>
+                <span>Barong with Tailored Khaki Slacks</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-amber-50/40 transition">
+              <td class="py-3.5 px-3 font-medium text-wedding-plum">Secondary Sponsors</td>
+              <td class="py-3.5 px-3">Groomsmen</td>
+              <td class="py-3.5 px-3 flex items-center gap-2.5">
+                <span class="w-4 h-4 rounded-full flex-shrink-0 shadow-xs border border-black/10" style="background:#6b4226;"></span>
+                <span>Barong with Warm Brown Slacks</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Respectful Etiquette Reminder -->
+      <div class="mt-8 p-4 sm:p-5 rounded-xl bg-amber-50/80 border border-amber-200/70 text-center">
+        <p class="font-serif italic text-base sm:text-lg text-wedding-plum">
+          &ldquo;We would adore for our sunset palette to bloom across our wedding memories!&rdquo;
+        </p>
+        <p class="font-sans text-xs sm:text-sm text-wedding-wine/80 mt-1 font-light">
+          Kindly note: White and ivory shades are respectfully reserved exclusively for the bride.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="gift" id="gift">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">A Small Note</div>
-      <h2>Gift Guide</h2>
-      <div class="rule" style="background:linear-gradient(90deg,#fff,#fff6ec);"></div>
+<!-- ================= GIFT GUIDE SECTION ================= -->
+<section id="gift" class="py-24 sm:py-28 px-4 relative overflow-hidden text-center"
+  style="background: linear-gradient(170deg, #fba558 0%, #ee6064 45%, #b72b6b 80%, #3e1235 100%);">
+
+  <!-- Ambient Glow -->
+  <div class="absolute inset-0 shimmer-rays pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-2xl mx-auto text-white">
+    <span class="font-script text-3xl sm:text-4xl text-amber-200">A Heartfelt Note</span>
+    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal tracking-wide mt-1 drop-shadow-sm">
+      Gift Guide
+    </h2>
+    <div class="filigree-divider">
+      <svg class="w-6 h-6 text-amber-200" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V14h2V8.76L15.38 12 17 10.83 14.92 8H20v6z"/>
+      </svg>
     </div>
-    <p>Having you celebrate with us is more than enough. If you'd like to give a gift, we would greatly appreciate a monetary contribution toward our future together. You're welcome to send it using the QR code below.</p>
-    <div class="qr-box">Bank / E-wallet<br>QR code here</div>
-    <p style="margin-top:26px;">Thank you for being part of our journey!</p>
+
+    <p class="font-sans text-sm sm:text-base text-amber-50/90 leading-relaxed font-light mt-2 max-w-lg mx-auto">
+      Your presence, prayers, and laughter at our Palawan wedding are the greatest gifts of all. If you wish to bless us further as we build our family and future together, a monetary gift would be deeply treasured.
+    </p>
+
+    <!-- Ornate QR Card Frame matching Mockup -->
+    <div class="mt-10 mx-auto w-64 sm:w-72 p-6 rounded-2xl bg-white/95 text-wedding-plum shadow-2xl relative border-2 border-amber-300">
+      <!-- Ornate corner decorative flourishes -->
+      <div class="text-[0.65rem] tracking-[0.22em] uppercase text-wedding-orange font-bold font-sans mb-3">
+        E-Wallet &bull; Bank Transfer
+      </div>
+
+      <!-- Stylized QR Placeholder Canvas / SVG -->
+      <div class="w-48 h-48 sm:w-52 sm:h-52 mx-auto rounded-xl bg-amber-50/60 p-4 border border-amber-200 flex flex-col items-center justify-center relative group">
+        <svg class="w-28 h-28 text-wedding-plum/80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-5 0h2v3h-2v-3zm2 3h3v2h-3v-2zm3 2h3v3h-3v-3zm-5 1h2v2h-2v-2zm2 2h3v1h-3v-1zm1-5h2v2h-2v-2z"/>
+        </svg>
+        <span class="font-serif italic text-xs text-wedding-plum font-semibold mt-2">
+          Cedric &amp; Racle
+        </span>
+        <span class="text-[0.62rem] font-sans text-wedding-wine/60 uppercase tracking-widest mt-0.5">
+          Scan to send gift
+        </span>
+      </div>
+
+      <p class="text-xs font-sans text-wedding-wine/70 mt-4 font-light">
+        GCash &bull; Maya &bull; BDO / BPI
+      </p>
+    </div>
+
+    <p class="font-script text-3xl sm:text-4xl text-amber-200 mt-10">
+      Thank you for being part of our journey!
+    </p>
   </div>
 </section>
 
-<footer>
-  <div class="hashtag">#angCEDnisigawngpusoniRACLE</div>
-  <div class="names">Cedric Soberano Labida &amp; Racle Magtulis Domondon</div>
-  <div class="names" style="opacity:0.7; font-size:0.85rem;">April 2, 2027 &middot; Villa Franchesca, Palawan</div>
-  <div class="credit">Crafted with love by <a href="https://tiktok.com/@loveanne.ph" target="_blank" rel="noopener">Love, Anne</a></div>
+<!-- ================= FOOTER SECTION ================= -->
+<footer class="bg-wedding-plum text-amber-100/90 py-16 px-4 text-center relative border-t border-amber-400/20">
+  <div class="max-w-2xl mx-auto space-y-4">
+    <!-- Hashtag -->
+    <div class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-amber-300 font-light tracking-wide break-words">
+      #angCEDnisigawngpusoniRACLE
+    </div>
+
+    <!-- Couple's Formal Names -->
+    <div class="font-serif text-lg sm:text-xl text-white tracking-wide pt-2">
+      Cedric Soberano Labida <span class="text-amber-300 font-script text-2xl">&amp;</span> Racle Magtulis Domondon
+    </div>
+
+    <div class="text-xs sm:text-sm font-sans text-amber-200/70 tracking-[0.2em] uppercase font-light">
+      April 2, 2027 &bull; Villa Franchesca, Palawan
+    </div>
+
+    <div class="filigree-divider my-4">
+      <span class="text-amber-300 font-serif text-lg">&infin;</span>
+    </div>
+
+    <div class="text-xs font-sans tracking-widest uppercase text-white/50 pt-2">
+      Crafted with love by <a href="https://tiktok.com/@loveanne.ph" target="_blank" rel="noopener" class="text-amber-300 hover:underline">Love, Anne</a>
+    </div>
+  </div>
 </footer>
 
+<!-- ================= JAVASCRIPT LOGIC ================= -->
 <script>
-  // Sticky nav background on scroll
+  // Dynamic Sticky Glass Navbar Transition
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 60) nav.classList.add('scrolled');
-    else nav.classList.remove('scrolled');
+    if (window.scrollY > 80) {
+      nav.classList.add('bg-wedding-plum/90', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+      nav.classList.remove('py-4');
+    } else {
+      nav.classList.remove('bg-wedding-plum/90', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+      nav.classList.add('py-4');
+    }
   });
 
-  // Mobile nav toggle
+  // Responsive Mobile Menu Handlers
   const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  // Countdown to April 2, 2027 3:00 PM Philippine time
-  const target = new Date('2027-04-02T15:00:00+08:00').getTime();
-  function updateCountdown(){
-    const now = Date.now();
-    let diff = target - now;
-    if (diff < 0) diff = 0;
-    const d = Math.floor(diff / (1000*60*60*24));
-    const h = Math.floor((diff / (1000*60*60)) % 24);
-    const m = Math.floor((diff / (1000*60)) % 60);
-    const s = Math.floor((diff / 1000) % 60);
-    document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(m).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
+  function openMenu() {
+    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+    mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = 'hidden';
   }
+
+  function closeMenu() {
+    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+    mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = '';
+  }
+
+  if (navToggle) navToggle.addEventListener('click', openMenu);
+  if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMenu);
+  mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  // Live High-Precision Wedding Countdown
+  // Event: April 2, 2027 at 3:00 PM (15:00) Philippine Standard Time (UTC+8)
+  const targetDate = new Date('2027-04-02T15:00:00+08:00').getTime();
+
+  function updateCountdown() {
+    const now = Date.now();
+    let difference = targetDate - now;
+
+    if (difference <= 0) {
+      document.getElementById('cd-days').textContent = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent = '00';
+      document.getElementById('cd-secs').textContent = '00';
+      return;
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    const elDays = document.getElementById('cd-days');
+    const elHours = document.getElementById('cd-hours');
+    const elMins = document.getElementById('cd-mins');
+    const elSecs = document.getElementById('cd-secs');
+
+    if (elDays) elDays.textContent = String(days).padStart(2, '0');
+    if (elHours) elHours.textContent = String(hours).padStart(2, '0');
+    if (elMins) elMins.textContent = String(minutes).padStart(2, '0');
+    if (elSecs) elSecs.textContent = String(seconds).padStart(2, '0');
+  }
+
   updateCountdown();
   setInterval(updateCountdown, 1000);
 </script>
